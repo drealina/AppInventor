@@ -22,7 +22,7 @@ Start: 23.02.2017
 - NV-Blog mit einbeziehen und eigenen RSS-Feed von einer belibigen Website öfnnen lassen
 -
 
-###<a name="2"></a> Informationenen über App Inventor
+### <a name="2"></a> Informationenen über App Inventor
 
 Ursprünglich wurde App Inventor von dem Unternemen Google Inc. als eine Entwicklungsumgebung entwickelt, um Anwendungen für Android zu konzipieren. Android ist sowohl ein Betriebssystem als auch eine Software Plattform für mobile Geräte wie Smartphones oder Tablets. App Inventor ermöglicht es, per Drag and Drop, grafische Blöcke zu erstellen.
 
@@ -33,16 +33,16 @@ App Inventor arbeitet mit den Open-Blocks von der Java-Bibliothek. Die Software 
 Aufgebaut ist App Inventor in zwei Arbeitsebenen; die Design-Ebene sowie die Blocks-Ebene.
 Die Design-Ebene ermöglicht es dem Nutzer ein Layout für die eigene App zu gestalten.. dafür stehen sehr viele verschiedne Auswahlmöglichkeiten zur Verfügung. In der Blocks-Ebene können die einzelnen Kompotten der verschiednen Blöcke zueinander in Beziehung gesetzt werden und durch Parametern sowie Kontrollstrukturen in eine logische Ordnung gebracht werden. Beispielsweise gibt es Blöcke für for-Schleifen und mathematischen Funktionen.
 
-###<a name="3"></a> Unsere bisherige App
+### <a name="3"></a> Unsere bisherige App
 
 
-###<a name="4"></a> Überlegung zum Design
+### <a name="4"></a> Überlegung zum Design
 
 
-###<a name="5"></a> Erklärung der einzelen Blocks
+### <a name="5"></a> Erklärung der einzelen Blocks
 
 
-###<a name="6"></a> Studenprotokoll über unsere Arbeit
+### <a name="6"></a> Studenprotokoll über unsere Arbeit
 
 
-###<a name="7"></a> Fazit
+### <a name="7"></a> Fazit
