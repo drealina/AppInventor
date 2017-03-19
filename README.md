@@ -16,7 +16,7 @@ Start: 23.02.2017
 [7. Fazit](#7)
 
 
-###<a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung
+### <a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung
 
 - eine App für Stormstory mithilfe des RSS- Feed (Was ist ein RSS-Feed)
 - NV-Blog mit einbeziehen und eigenen RSS-Feed von einer belibigen Website öfnnen lassen
