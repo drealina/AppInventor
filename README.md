@@ -10,14 +10,17 @@ Start: 23.02.2017
 [1. Allgemeine Überlegungen zur App-Entwicklung](#1)  
 [2. Informationenen über App Inventor](#2)  
 [3. Unsere bisherige App](#3)
-[4. Überlegungem zum Design](#4)  
-[5. Erklärungen der einzelen Blocks](#5)  
+[4. Überlegung zum Design](#4)  
+[5. Erklärung der einzelen Blocks](#5)  
 [6. Studenprotokoll über unsere Arbeit](#6)
 [7. Fazit](#7)
 
 
 ###<a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung
 
+- eine App für Stormstory mithilfe des RSS- Feed (Was ist ein RSS-Feed)
+- NV-Blog mit einbeziehen und eigenen RSS-Feed von einer belibigen Website öfnnen lassen
+-
 
 ###<a name="2"></a> Informationenen über App Inventor
 
@@ -33,10 +36,10 @@ Die Design-Ebene ermöglicht es dem Nutzer ein Layout für die eigene App zu ges
 ###<a name="3"></a> Unsere bisherige App
 
 
-###<a name="4"></a> Überlegungem zum Design
+###<a name="4"></a> Überlegung zum Design
 
 
-###<a name="5"></a> Erklärungen der einzelen Blocks
+###<a name="5"></a> Erklärung der einzelen Blocks
 
 
 ###<a name="6"></a> Studenprotokoll über unsere Arbeit
