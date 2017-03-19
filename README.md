@@ -9,8 +9,7 @@ Start: 23.02.2017
 
 [1. Allgemeine Überlegungen zur App-Entwicklung](#1)  
 [2. Informationenen über App Inventor](#2)  
-[3. Unsere bisherige App](#3)
-
+[3. Unsere bisherige App](#3)<br>
 [4. Überlegung zum Design](#4)  
 [5. Erklärung der einzelen Blocks](#5)  
 [6. Studenprotokoll über unsere Arbeit](#6)
