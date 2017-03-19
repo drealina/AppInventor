@@ -7,18 +7,18 @@ Start: 23.02.2017
 ## Inhaltsverzeichnis
 
 [1. Allgemeine Überlegungen zur App-Entwicklung](#1)  
-[2. Informationenen über App Inventor 2](#2)  
+[2. Informationenen über App Inventor](#2)  
 [3. Unsere bisherige App](#3)
 [4. Überlegungem zum Design](#4)  
 [5. Erklärungen der einzelen Blocks](#5)  
 [6. Studenprotokoll über unsere Arbeit](#6)
-[7.Fazit](#7)
+[7. Fazit](#7)
 
 
 ###<a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung
 
 
-###<a name="2"></a> Informationenen über App Inventor 2
+###<a name="2"></a> Informationenen über App Inventor
 
 Ursprünglich wurde App Inventor von dem Unternemen Google Inc. als eine Entwicklungsumgebung entwickelt, um Anwendungen für Android zu konzipieren. Android ist sowohl ein Betriebssystem als auch eine Software Plattform für mobile Geräte wie Smartphones oder Tablets. App Inventor ermöglicht es, per Drag and Drop, grafische Blöcke zu erstellen.
 
