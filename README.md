@@ -15,7 +15,7 @@
 <a href="#6">6. Studenprotokoll über unsere Arbeit</a><br>
 <a href="#7">7. Fazit</a></p>
 
-<h3><a id="a_name1a_Allgemeine_berlegungen_zur_AppEntwicklung_18"></a>&lt;a name=“1”&gt;&lt;/a&gt; Allgemeine Überlegungen zur App-Entwicklung</h3>
+<h3 id="a_name1a_Allgemeine_berlegungen_zur_AppEntwicklung_18"><a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung</h3>
 <ul>
 <li>eine App für Stormstory mithilfe des RSS- Feed (Was ist ein RSS-Feed)</li>
 <li>NV-Blog mit einbeziehen und eigenen RSS-Feed von einer belibigen Website öfnnen lassen</li>
