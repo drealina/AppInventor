@@ -9,7 +9,7 @@
 
 <p><a href="#1">1. Allgemeine Überlegungen zur App-Entwicklung</a><br>
 <a href="#2">2. Informationenen über App Inventor</a><br>
-<a href="#3">3. Unsere bisherige App</a>&lt;br&gt;<br>
+<a href="#3">3. Unsere bisherige App</a><br>
 <a href="#4">4. Überlegung zum Design</a><br>
 <a href="#5">5. Erklärung der einzelen Blocks</a><br>
 <a href="#6">6. Studenprotokoll über unsere Arbeit</a><br>
