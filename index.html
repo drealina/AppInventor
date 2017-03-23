@@ -20,7 +20,7 @@
 <p><a href="#1">1. Allgemeine Überlegungen zur App-Entwicklung</a><br>
 <a href="#2">2. Informationenen über App Inventor</a><br>
 <a href="#3">3. Das App-Design</a><br>
-<a href="#4">4. Erklärung der wichtigsten Blocks</a><br>
+<a href="#4">4. Erklärung der einzelnen Blocks</a><br>
 <a href="#5">5. Studenprotokoll über unsere Arbeit</a><br>
 <a href="#6">6. Fazit</a>
 
@@ -53,7 +53,7 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 <h3 id="a_name3a_Das_App-Design"><a name="2"></a> Das App-Design</h3>
 						    
 	
-<h3 id="a_name4a_Erklärung_der_wichtigsten_Blocks_41"><a name="4"></a> Erklärung der wichtigsten Blocks</h3>
+<h3 id="a_name4a_Erklärung_der_einzelnen_Blocks_41"><a name="4"></a> Erklärung der einzelnen Blocks</h3>
 	
 	<img src="Bilder/1.PNG" alt="Bilder/1.PNG" style="width:700px;height:310px;border:0;">
 	
@@ -65,11 +65,27 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 											      
 	<img src="Bilder/2.PNG" alt="Bilder/2.PNG" style="width:511px;height:197px;border:0;">
 	
+	<p>
+		Wenn die App geöffnet wird, ist “Screen 1” zu sehen. Ebenfalls auf “Screen 1” zu sehen ist ein Textbutton mit “wähle Feed … “. Wenn der Nutzer diesen anklickt, wird dieser auf eine Liste (”set IstFeeds.Elements to create empty list”) weitergeleitet. Dieser Liste werden die oben genannten “global feeds” durch den blauen Block hinzugefügt  und der Nutzer kann einen auswählen.
+	</p>
+	
 	<img src="Bilder/3.PNG" alt="Bilder/3.PNG" style="width:580px;height:373px;border:0;">
+	
+	<p>
+		Wählt der Nutzer “Eigener Feed” aus der Liste, wird ihm eine Nachricht zusammen mit einem Textfeld angezeigt, in welches eine beliebige rssUrl eingetragen werden kann (zu sehen im if-Block). Wurde ein eigener Feed angegeben oder einer aus der vorgegebenen Liste ausgewählt, wird geprüft, ob dieser existiert. Wenn ja wird dieser ausgeführt und wenn nicht wird dem Nutzer dies ebenfalls mitgeteilt.
+	</p>
 	
 	<img src="Bilder/6.PNG" alt="Bilder/6.PNG" style="width:487px;height:405px;border:0;">
 	
+	<p>
+		Zur Navigation werden vier Buttons verwendet. Der erste Button (btnFirst) bringt den Nutzer zum ersten Beitrag, dieser trägt die index-Nummer “1”. Der zweite Button (btnPrevious) dient dazu, zum vorigen Beitrag in der Liste zu navigieren. Dafür wird der “global itemIndex” abgefragt und minus eins gerechnet, um die index-Nummer des vorigen Beitrags zu ermitteln. Der nächste Button (btnNext) funktioniert nach dem gleichen Prinzip, es wird lediglich nicht minus, sonder plus eins auf den “global itemIndex” gerechnet, um zu dem nächsten Beitrag in der Liste zu gelangen. Der letzte Button (btnLast) bringt den Nutzer zum letzten Beitrag in der Liste. Hierfür wird die gesamte Länge der Liste ermittelt und die index-Nummer auf diesen Wert gesetzt.
+	</p>
+	
 	<img src="Bilder/4.PNG" alt="Bilder/4.PNG" style="width:465px;height:249px;border:0;">
+	
+	<p>
+		Um die Buttons nutzen zu können, müssen diese vorher aktiviert werden. Dafür ist der nächste Bloch zuständig.
+	</p>
 	
 	<img src="Bilder/7.PNG" alt="Bilder/7.PNG" style="width:862px;height:492px;border:0;">
 	
@@ -82,66 +98,45 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 
 <h4 id="22.02.2017"> Mittwoch, der 22.02.2017 </h4>
 Wir haben uns heute damit auseinandergesetzt, wie man einen RSS-Feed mithilfe von XML erstellt. 
-Da wir noch keine Erfahrungen über den RSS-Feed gesammelt haben, informierten wir uns zuerst generell über dieses Thema. Mit dem neu 
-gewonnenem Wissen probieren wir aus, einen RSS-feed selber zu schreiben. Hierfür verwendeten wir das Programm Notepad.
+Da wir noch keine Erfahrungen über den RSS-Feed gesammelt haben, informierten wir uns zuerst generell über dieses Thema. Mit dem neu gewonnenem Wissen probieren wir aus, einen RSS-feed selber zu schreiben. Hierfür verwendeten wir das Programm Notepad.
 
 Unser erster Versuch: <br>
 
 	<img src="Bilder/Unbenannt.PNG" alt="Bilder/Unbenannt.PNG" style="width:794px;height:550px;border:0;"> <br>
 
 
-Für den weiteren Verlauf unseres Projekts benötigen wir keinen eigenen RSS-Feed, da beispielsweise der RSS-Feed von Stromstory und dem 
-NV-Blog öffentlich zugänglich ist. <br>
+Für den weiteren Verlauf unseres Projekts benötigen wir keinen eigenen RSS-Feed, da beispielsweise der RSS-Feed von Stromstory und dem NV-Blog öffentlich zugänglich ist. <br>
 
 
 	<h4 id="23.02.2017"> Donnerstag, der 23.02.2017</h4>
 	
-Wir haben uns heute damit beschäftigt, uns den RSS-Feed der Stormstory Website genauer anzuschauen und gleichzeitig zu verstehen. Ein 
-Problem, das uns sofort aufgefallen ist ,war die Zeile “Du musst dich anmelden, um diesen Inhalt zu sehen”, welche in der Beschreibung 
-jedes Beitrags steht. <br> <br>
+Wir haben uns heute damit beschäftigt, uns den RSS-Feed der Stormstory Website genauer anzuschauen und gleichzeitig zu verstehen. Ein Problem, das uns sofort aufgefallen ist ,war die Zeile “Du musst dich anmelden, um diesen Inhalt zu sehen”, welche in der Beschreibung jedes Beitrags steht. <br> <br>
 
 	<img src="Bilder/Du musst dich anmelden bla bla.png" alt="Bilder/Du musst dich anmelden bla bla.png" style="width:813px;height:194px;border:0;"> <br> <br>
 			
-Da die Behebung dieses Problems nicht in unseren Händen liegt, sondern beim Stormstory-Team selber, haben wir uns dafür entschieden, eine
-App zu entwickeln, die verschiedene RSS-Feeds anzeigen kann z.B. auch unseren NV-Blog, da in diesem nicht die oben markierten Zeile zu 
-finden ist, sondern der Text der Website.
+Da die Behebung dieses Problems nicht in unseren Händen liegt, sondern beim Stormstory-Team selber, haben wir uns dafür entschieden, eine App zu entwickeln, die verschiedene RSS-Feeds anzeigen kann z.B. auch unseren NV-Blog, da in diesem nicht die oben markierten Zeile zu finden ist, sondern der Text der Website.
 
-In der zweiten Hälfte der Stunde haben wir uns mit dem Programm App Inventor 2 befasst. Mit dieser Software von Google ist es möglich,
-per Drag and Drop, Apps für Smartphones/Tablets zu programmieren. Um dieses besser zu verstehen, haben wir uns verschiedene Tutorials 
-auf Youtube angeschaut.<br>
+In der zweiten Hälfte der Stunde haben wir uns mit dem Programm App Inventor 2 befasst. Mit dieser Software von Google ist es möglich, per Drag and Drop, Apps für Smartphones/Tablets zu programmieren. Um dieses besser zu verstehen, haben wir uns verschiedene Tutorials auf Youtube angeschaut.<br>
 
 
 	<h4 id="01.03.2017"> Mittwoch, der 01.03.2017 </h4>
-Neue Stunde, neue Erfahrungen. Da wir es in der Stunde am Donnerstag nicht geschafft haben, uns anzuschauen, wie ein RSS-Feed in einer 
-App über App Inventor 2 angezeigt wird, haben wir uns verschiedene Videos angeschaut und uns mit Hilfe von Google Groups Beispiele 
-angesehen. Leider waren die meisten auf Spanisch oder Italienisch, weshalb uns diese für unserer Verständnis nicht wesentlich weiter 
-geholfen haben.<br>
+Neue Stunde, neue Erfahrungen. Da wir es in der Stunde am Donnerstag nicht geschafft haben, uns anzuschauen, wie ein RSS-Feed in einer App über App Inventor 2 angezeigt wird, haben wir uns verschiedene Videos angeschaut und uns mit Hilfe von Google Groups Beispiele angesehen. Leider waren die meisten auf Spanisch oder Italienisch, weshalb uns diese für unserer Verständnis nicht wesentlich weiter geholfen haben.<br>
 
 	
 	<h4 id="02.03.2017">Donnerstag, der 02.03.2017 </h4>
-Heute haben wir uns gemeinsam weitere Videos angesehen und erste grobe Überlegungen für eine eigene App entwickelt. Wir haben uns dazu
-entschieden, dass wir erstmal ein einfaches Design anstreben. Dieses Design versuchten wir in App Inventor 2 zu verwirklichen, jedoch 
-war dieses schwerer als gedacht, da wir nicht auf anhieb wussten, für welche Information welcher Block steht und wir das zuerst 
-herausfinden mussten. Damit beschäftigten wir uns den Rest der Stunde.<br>
+Heute haben wir uns gemeinsam weitere Videos angesehen und erste grobe Überlegungen für eine eigene App entwickelt. Wir haben uns dazu entschieden, dass wir erstmal ein einfaches Design anstreben. Dieses Design versuchten wir in App Inventor 2 zu verwirklichen, jedoch war dieses schwerer als gedacht, da wir nicht auf anhieb wussten, für welche Information welcher Block steht und wir das zuerst herausfinden mussten. Damit beschäftigten wir uns den Rest der Stunde.<br>
 
 	
 	<h4 id="08.03.2017">Mittwoch, der 08.03.2017 </h4>
-Zu dem heutigen Zeitpunkt haben wir ansatzweise verstanden und angefangen erste funktionsfähige Blocks zu programmieren. Wir haben 
-angefangen Blocks zu erstellen, die es ermöglichen einen RSS-Feed anzeigen zu lassen beziehungsweise einen eigenen RSS-Feed einzugeben. 
-Zudem sind einige Blocks dazu in der Lage, zwischen den Überschriften der WebSiten hin und her zu wechseln.<br>
+Zu dem heutigen Zeitpunkt haben wir ansatzweise verstanden und angefangen erste funktionsfähige Blocks zu programmieren. Wir haben angefangen Blocks zu erstellen, die es ermöglichen einen RSS-Feed anzeigen zu lassen beziehungsweise einen eigenen RSS-Feed einzugeben. Zudem sind einige Blocks dazu in der Lage, zwischen den Überschriften der WebSiten hin und her zu wechseln.<br>
 
 
 	<h4 id="09.03.2017">Donnerstag, der 09.03.2017 </h4>
-Heute haben wir weitere Befehle geschrieben, die es ermöglichen den RSS-Feed von der WebSite auf unserer App darzustellen. Das hat 
-leider noch nicht ganz so wie erwartet geklappt, denn der Feed wurde nicht geladen und die Seite blieb weiß.  Zwischenzeitlich haben 
-wir mit Hilfe eines Schultablets immer wieder nachschauen können, wie sich die App und ihre Funktionen verändern.<br>
+Heute haben wir weitere Befehle geschrieben, die es ermöglichen den RSS-Feed von der WebSite auf unserer App darzustellen. Das hat leider noch nicht ganz so wie erwartet geklappt, denn der Feed wurde nicht geladen und die Seite blieb weiß.  Zwischenzeitlich haben wir mit Hilfe eines Schultablets immer wieder nachschauen können, wie sich die App und ihre Funktionen verändern.<br>
 
 	
 	<h4 id="16.03.2017">Donnerstag, der 16.03.2017 </h4>
-Wir haben es heute geschafft, dass die App die einzelnen Überschriften von den beiden RSS-Feeds anzeigt. Jedoch wird nicht der jeweilige 
-Inhalt der Seiten angezeigt. Wir haben uns überlegt, worin das Problem liegen könnte und haben einige Befehle leicht verändert. Dies hat 
-uns leider auch nicht weitergeholfen, denn das Problem ist immer noch vorhanden. Deshalb haben wir im Internet nachgesehen, wie dieses 
-behoben werden kann, sind bisher aber noch nicht fündig geworden.<br>
+Wir haben es heute geschafft, dass die App die einzelnen Überschriften von den beiden RSS-Feeds anzeigt. Jedoch wird nicht der jeweilige Inhalt der Seiten angezeigt. Wir haben uns überlegt, worin das Problem liegen könnte und haben einige Befehle leicht verändert. Dies hat uns leider auch nicht weitergeholfen, denn das Problem ist immer noch vorhanden. Deshalb haben wir im Internet nachgesehen, wie dieses behoben werden kann, sind bisher aber noch nicht fündig geworden.<br>
 
 
 	<h4 id="21.03.2017">Dienstag, der 21.03.2017 </h4>
