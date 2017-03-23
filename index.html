@@ -28,7 +28,7 @@
 			</div> 
 <div id="content">
 	
-<h3 id="a_name1a_Allgemeine_berlegungen_zur_AppEntwicklung_18"><a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung</h3>
+<h3 id="a_name1a_Allgemeine_Überlegungen_zur_AppEntwicklung_18"><a name="1"></a> Allgemeine Überlegungen zur App-Entwicklung</h3>
 <ul>
 <li>Programmierung eines RSS-Feed Readers</li>
 <li> für Stormstory WebSite <a href="http://stormstory.de/feed/">(http://stormstory.de/feed/)</a>, NV-Blog 
@@ -40,33 +40,34 @@
 		RSS (Really Simple Syndication) sind Dateiformate für Web-Feeds. Die Bereitstellung von Daten im RSS-Format wird auch als RSS-Feed bezeichnet. <br>
 		
 <li> schlichtes Design</li>
-<li> verschiedne Buttons um zwischen den einzelenen beiträgen wechseln zu können</li>
-<li> Textfeld mit der Möglichkeit zum scrollen</li>
-<li> Textfeld mit der Beitragnummer</li>
-<li> Überschrift des Beitrages soll über dem eigentlichen beitrag angezeigt werden als seperater Block </li> <br>
+<li> verschiedene Buttons um zwischen den einzelnen Beiträgen wechseln zu können</li>
+<li> Textfeld mit der Möglichkeit zum Scrollen</li>
+<li> Textfeld mit der Beitragsnummer</li>
+<li> Überschrift des Beitrages soll über dem eigentlichen Beitrag angezeigt werden als seperater Block </li> <br>
 </ul>
 
 <h3 id="a_name2a_Informationenen_ber_App_Inventor_24"><a name="2"></a> Informationenen über App Inventor</h3>
 
-<p>Ursprünglich wurde App Inventor von dem Unternemen Google Inc. als eine Entwicklungsumgebung entwickelt, um Anwendungen für Android 
-zu konzipieren. Android ist sowohl ein Betriebssystem als auch eine Software Plattform für mobile Geräte wie Smartphones oder Tablets.
+<p>Ursprünglich wurde App Inventor von dem Unternehmen Google Inc. als eine Entwicklungsumgebung entwickelt, um Anwendungen für Android 
+zu konzipieren. Android ist sowohl ein Betriebssystem, als auch eine Software Plattform für mobile Enderäte wie Smartphones oder Tablets.
 App Inventor ermöglicht es, per Drag and Drop, grafische Blöcke zu erstellen.
 Als eine closed Beta wurde die Software erstmals am 12. Juli 2010 für registrierte Nutzer zur Verfügung gestellt. Seit dem 15. Dezember
 gleichen Jahres war sie öffentlich zugänglich.
-App Inventor arbeitet mit den Open-Blocks von der Java-Bibliothek. Die Software arbeitet mit dem Hintergrund, den Einstieg in die 
+App Inventor arbeitet mit den Open-Blocks der Java-Bibliothek. Die Software arbeitet vor dem Hintergrund, den Einstieg in die 
 Programmierung von Applikationen für Smartphones/Tablets zu erleichtern
-Aufgebaut ist App Inventor in zwei Arbeitsebenen; die Design-Ebene sowie die Blocks-Ebene.<br>
-Die Design-Ebene ermöglicht es dem Nutzer ein Layout für die eigene App zu gestalten. Dafür stehen sehr viele verschiedene 
-Auswahlmöglichkeiten zur Verfügung. In der Blocks-Ebene können die einzelnen Kompotten der verschiednen Blöcke zueinander in 
-Beziehung gesetzt werden und durch Parametern sowie Kontrollstrukturen in eine logische Ordnung gebracht werden. Beispielsweise 
-gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
+Aufgebaut ist App Inventor in zwei Arbeitsebenen; die Design-Ebene und die Blocks-Ebene.<br>
+Die Design-Ebene ermöglicht es dem Nutzer ein Layout für die eigene App zu gestalten. Dafür stehen viele verschiedene 
+Auswahlmöglichkeiten zur Verfügung. In der Blocks-Ebene können die einzelnen Komponenten der verschiedenen Blöcke zueinander in 
+Beziehung gesetzt werden und durch Parameter sowie Kontrollstrukturen in eine logische Ordnung gebracht werden. Beispielsweise 
+gibt es Blöcke für for-Schleifen und mathematische Funktionen.</p>
 
 <h3 id="a_name3a_Das_App-Design"><a name="2"></a> Das App-Design</h3>
-	
-	<img src="Bilder/Design.png" alt="Bilder/Design.png" style="width:679px;height:592px;border:0;">					    
+	<p>
+	<img src="Bilder/Design.png" alt="Bilder/Design.png" style="width:679px;height:592px;border:0;">
+	</p>
 	
 <h3 id="a_name4a_Erklärung_der_einzelnen_Blöcke_41"><a name="4"></a> Erklärung der einzelnen Blöcke</h3>
-	
+<p>
 	
 	<p>
 	Der erste Block ist dafür zuständig, eine Liste zu erstellen, aus welcher der entsprechende RSS-Feed ausgewählt werden 
@@ -77,19 +78,31 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 	<img src="Bilder/1.PNG" alt="Bilder/1.PNG" style="width:700px;height:310px;border:0;">
 	
 		<p>
-		Wenn die App geöffnet wird, ist “Screen 1” zu sehen. Ebenfalls auf “Screen 1” zu sehen ist ein Textbutton mit “wähle Feed … “. Wenn der Nutzer diesen anklickt, wird dieser auf eine Liste (”set IstFeeds.Elements to create empty list”) weitergeleitet. Dieser Liste werden die oben genannten “global feeds” durch den blauen Block hinzugefügt  und der Nutzer kann einen auswählen.
+		Wenn die App geöffnet wird, ist “Screen 1” zu sehen. Ebenfalls auf “Screen 1” zu sehen ist ein Textbutton mit 
+		“wähle Feed … “. Wenn der Nutzer diesen anklickt, wird dieser auf eine Liste (”set IstFeeds.Elements to create empty list”)
+		weitergeleitet. Dieser Liste werden die oben genannten “global feeds” durch den blauen Block hinzugefügt  und der Nutzer 
+		kann einen auswählen.
 	</p>
 	
 	<img src="Bilder/2.PNG" alt="Bilder/2.PNG" style="width:511px;height:197px;border:0;">
 	
 	<p>
-		Wählt der Nutzer “Eigener Feed” aus der Liste, wird ihm eine Nachricht zusammen mit einem Textfeld angezeigt, in welches eine beliebige rssUrl eingetragen werden kann (zu sehen im if-Block). Wurde ein eigener Feed angegeben oder einer aus der vorgegebenen Liste ausgewählt, wird geprüft, ob dieser existiert. Wenn ja wird dieser ausgeführt und wenn nicht wird dem Nutzer dies ebenfalls mitgeteilt.
+		Wählt der Nutzer “Eigener Feed” aus der Liste, wird ihm eine Nachricht zusammen mit einem Textfeld angezeigt, in welches
+		eine beliebige rssUrl eingetragen werden kann (zu sehen im if-Block). Wurde ein eigener Feed angegeben oder einer aus der
+		vorgegebenen Liste ausgewählt, wird geprüft, ob dieser existiert. Wenn ja wird dieser ausgeführt und wenn nicht wird dem
+		Nutzer dies ebenfalls mitgeteilt.
 	</p>
 	
 	<img src="Bilder/3.PNG" alt="Bilder/3.PNG" style="width:580px;height:373px;border:0;">
 	
 	<p>
-		Zur Navigation werden vier Buttons verwendet. Der erste Button (btnFirst) bringt den Nutzer zum ersten Beitrag, dieser trägt die index-Nummer “1”. Der zweite Button (btnPrevious) dient dazu, zum vorigen Beitrag in der Liste zu navigieren. Dafür wird der “global itemIndex” abgefragt und minus eins gerechnet, um die index-Nummer des vorigen Beitrags zu ermitteln. Der nächste Button (btnNext) funktioniert nach dem gleichen Prinzip, es wird lediglich nicht minus, sonder plus eins auf den “global itemIndex” gerechnet, um zu dem nächsten Beitrag in der Liste zu gelangen. Der letzte Button (btnLast) bringt den Nutzer zum letzten Beitrag in der Liste. Hierfür wird die gesamte Länge der Liste ermittelt und die index-Nummer auf diesen Wert gesetzt.
+		Zur Navigation werden vier Buttons verwendet. Der erste Button (btnFirst) bringt den Nutzer zum ersten Beitrag, dieser 
+		trägt die index-Nummer “1”. Der zweite Button (btnPrevious) dient dazu, zum vorigen Beitrag in der Liste zu navigieren. 
+		Dafür wird der “global itemIndex” abgefragt und minus eins gerechnet, um die index-Nummer des vorigen Beitrags zu 
+		ermitteln. Der nächste Button (btnNext) funktioniert nach dem gleichen Prinzip, es wird lediglich nicht minus, sonder 
+		plus eins auf den “global itemIndex” gerechnet, um zu dem nächsten Beitrag in der Liste zu gelangen. Der letzte Button 
+		(btnLast) bringt den Nutzer zum letzten Beitrag in der Liste. Hierfür wird die gesamte Länge der Liste ermittelt und die
+		index-Nummer auf diesen Wert gesetzt.
 	</p>
 	
 	<img src="Bilder/6.PNG" alt="Bilder/6.PNG" style="width:487px;height:405px;border:0;">
@@ -101,13 +114,16 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 	<img src="Bilder/4.PNG" alt="Bilder/4.PNG" style="width:465px;height:249px;border:0;">
 	
         <p>
-	Um den Feed anzuzeigen werden die Labell “lblStatus” und “lblDescription” und der Button “Item” benötigt. Zunächst wird der “global itemIndex” festgesetzt, beim Start ist dieser auf eins festgelegt. Auf welchem Beitrag man sich zur Zeit befindet, wird durch “lblStatus” im Schema “1 von 1” angezeigt. Dann wird der Inhalt des RSS-Feed angezeigt, die Überschrift im “btnItem” und der Text im “lblDescription”.
+	Um den Feed anzuzeigen werden die Labell “lblStatus” und “lblDescription” und der Button “Item” benötigt. Zunächst wird der 
+		“global itemIndex” festgesetzt, beim Start ist dieser auf eins festgelegt. Auf welchem Beitrag man sich zur Zeit befindet,
+		wird durch “lblStatus” im Schema “1 von 1” angezeigt. Dann wird der Inhalt des RSS-Feed angezeigt, die Überschrift im 
+		“btnItem” und der Text im “lblDescription”.
 	</p>
 	
 	
 	<img src="Bilder/7.PNG" alt="Bilder/7.PNG" style="width:862px;height:492px;border:0;">
 	
-	
+</p>
 	
 	
 	<h3 id="a_name5a_Studenprotokoll_über_unsere_Arbeit_44"><a name="5"></a> Stundenprotokoll über unsere Arbeit</h3>
