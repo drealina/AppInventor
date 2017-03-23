@@ -55,37 +55,40 @@ gibt es Blöcke für for-Schleifen und mathematischen Funktionen.</p>
 	
 <h3 id="a_name4a_Erklärung_der_einzelnen_Blocks_41"><a name="4"></a> Erklärung der einzelnen Blocks</h3>
 	
-	<img src="Bilder/1.PNG" alt="Bilder/1.PNG" style="width:700px;height:310px;border:0;">
 	
-	<p>
+		<p>
 	Der erste Block ist dafür zuständig, eine Liste zu erstellen, aus welcher der entsprechende RSS-Feed ausgewählt werden 
 	kann. Zur Auswahl stehen der NV-Blog, die Stormstory-WebSite und ein eigener Feed, für welchen der Nutzer eine eigene 
 	rssUrl eingeben muss. In der Liste wird jeweils die Überschrift der drei Komponenten angezeigt.
 	 </p>
-											      
-	<img src="Bilder/2.PNG" alt="Bilder/2.PNG" style="width:511px;height:197px;border:0;">
 	
-	<p>
+	<img src="Bilder/1.PNG" alt="Bilder/1.PNG" style="width:700px;height:310px;border:0;">
+	
+		<p>
 		Wenn die App geöffnet wird, ist “Screen 1” zu sehen. Ebenfalls auf “Screen 1” zu sehen ist ein Textbutton mit “wähle Feed … “. Wenn der Nutzer diesen anklickt, wird dieser auf eine Liste (”set IstFeeds.Elements to create empty list”) weitergeleitet. Dieser Liste werden die oben genannten “global feeds” durch den blauen Block hinzugefügt  und der Nutzer kann einen auswählen.
 	</p>
 	
-	<img src="Bilder/3.PNG" alt="Bilder/3.PNG" style="width:580px;height:373px;border:0;">
+	<img src="Bilder/2.PNG" alt="Bilder/2.PNG" style="width:511px;height:197px;border:0;">
 	
 	<p>
 		Wählt der Nutzer “Eigener Feed” aus der Liste, wird ihm eine Nachricht zusammen mit einem Textfeld angezeigt, in welches eine beliebige rssUrl eingetragen werden kann (zu sehen im if-Block). Wurde ein eigener Feed angegeben oder einer aus der vorgegebenen Liste ausgewählt, wird geprüft, ob dieser existiert. Wenn ja wird dieser ausgeführt und wenn nicht wird dem Nutzer dies ebenfalls mitgeteilt.
 	</p>
 	
-	<img src="Bilder/6.PNG" alt="Bilder/6.PNG" style="width:487px;height:405px;border:0;">
+	<img src="Bilder/3.PNG" alt="Bilder/3.PNG" style="width:580px;height:373px;border:0;">
 	
 	<p>
 		Zur Navigation werden vier Buttons verwendet. Der erste Button (btnFirst) bringt den Nutzer zum ersten Beitrag, dieser trägt die index-Nummer “1”. Der zweite Button (btnPrevious) dient dazu, zum vorigen Beitrag in der Liste zu navigieren. Dafür wird der “global itemIndex” abgefragt und minus eins gerechnet, um die index-Nummer des vorigen Beitrags zu ermitteln. Der nächste Button (btnNext) funktioniert nach dem gleichen Prinzip, es wird lediglich nicht minus, sonder plus eins auf den “global itemIndex” gerechnet, um zu dem nächsten Beitrag in der Liste zu gelangen. Der letzte Button (btnLast) bringt den Nutzer zum letzten Beitrag in der Liste. Hierfür wird die gesamte Länge der Liste ermittelt und die index-Nummer auf diesen Wert gesetzt.
 	</p>
 	
-	<img src="Bilder/4.PNG" alt="Bilder/4.PNG" style="width:465px;height:249px;border:0;">
+	<img src="Bilder/6.PNG" alt="Bilder/6.PNG" style="width:487px;height:405px;border:0;">
 	
 	<p>
 		Um die Buttons nutzen zu können, müssen diese vorher aktiviert werden. Dafür ist der nächste Block zuständig.
 	</p>
+	
+	<img src="Bilder/4.PNG" alt="Bilder/4.PNG" style="width:465px;height:249px;border:0;">
+	
+
 	
 	<img src="Bilder/7.PNG" alt="Bilder/7.PNG" style="width:862px;height:492px;border:0;">
 	
